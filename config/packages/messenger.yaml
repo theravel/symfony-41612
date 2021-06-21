@@ -1,0 +1,6 @@
+framework:
+    messenger:
+        transports:
+            doctrine_failed:
+                dsn: '%env(MESSENGER_TRANSPORT_DOCTRINE_DSN)%'
+        failure_transport: doctrine_failed
